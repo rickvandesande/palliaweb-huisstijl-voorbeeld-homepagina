@@ -21,13 +21,13 @@ body {
     color: var(--primary-color-800);
     font-family: "Poppins";
     font-size: 14px;
-    background-color: var(--secondary-color-500);
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 1200px;
+    max-width: 1240px;
     padding: 0px 20px;
     margin: auto;
     display: flex;
@@ -254,4 +254,174 @@ header {
 }
 .rotate {
     transform: rotate(180deg);
+}
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.hero {
+    background-image: url('https://palliaweb.nl/getmedia/d96586c3-8a1a-4095-af75-45567b38bfe3/Homepage_nieuw_a.jpg');
+    background-position: 0%;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.hero-title {
+    justify-content: flex-end;
+}
+.hero h1 {
+    color: #ffffff;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.500);
+    font-size: 55px;
+    font-weight: 600;
+    max-width: 50%;
+    margin-bottom: 60px;
+}
+.separator {
+    width: 100%;
+    height: 18px;
+    background-color: var(--touch-color-300);
+}
+.homepage-intro-section {
+    background: linear-gradient(var(--secondary-color-500) calc(100% - 75px), #fff 75px);
+}
+.container_1-2 {
+    width: 50%;
+}
+.hero-search-container {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    background-color: #ffffff;
+    max-width: calc(100% - 70px);
+    padding: 16px 0 0;
+    align-items: center;
+    border-radius: 0px 0px 40px 0px;
+    margin: -110px 0 60px;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 5px 7px 65px rgba(0,0,0,0.071);
+}
+.hero-search-title {
+    font-size: 26px;
+    line-height: 1.1;
+    margin: 0 0 10px;
+    max-width: 80%;
+    text-align: center;
+    padding: 0 32px;
+    font-weight: 500;
+}
+.hero-search-form {
+    border-radius: 18px;
+    border: 1px solid var(--secondary-color-500);
+    padding: 5px 9px 0;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 64px);
+    margin: 0 20px 12px;
+}
+.hero-search-form input[type=text] {
+    position: relative;
+    top: -3px;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+}
+.hero-search-form input[type=text]:focus {
+    outline: none;
+}
+.hero-search-form input::placeholder {
+    font-weight: 400;
+}
+.hero-search-form input[type=submit] {
+    display: none;
+}
+.hero-search-description {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 0 32px;
+    line-height: 18px;
+}
+.hero-search-categories {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 2px);
+    flex-wrap: wrap;
+}
+.hero-search-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color-800);
+    width: 33%;
+    max-width: 127px;
+    background-color: var(--secondary-color-500);
+    padding: 15px;
+    border-top: 2px solid #ffffff;
+}
+.hero-search-category-title {
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1;
+}
+.intro-container-aside {
+    margin-top: 120px;
+    padding: 0 100px;
+    max-width: 500px;
+    text-align: center;
+}
+.intro-container {
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    padding: 20px 100px 60px 0;
+    z-index: 0;
+    font-size: 16px;
+    text-align: center;
+}
+.intro-container::before {
+    position: absolute;
+    display: block;
+    left: -80px;
+    top: 0;
+    content: "";
+    width: calc(100% + 80px);
+    height: 100%;
+    z-index: -1;
+    background-color: var(--secondary-color-300);
+    border-radius: 0px 0px 0px 80px;
+}
+.intro-divider {
+    border: 2px solid var(--touch-color-300);
+    width: 98px;
+    height: 0;
+}
+.content-header-container:first-child {
+padding-top: 50px;
+}
+.content-header-container {
+    display: block;
+    text-align: center;
+}
+.content-block-container {
+    width: 100%;
+    display: flex;
+}
+.widget-section--2-columns .container{
+    width: 50%;
+    flex-direction: column;
+}
+.content-block-container-content {
+    padding: 20px 13px 40px;
+}
+.content-block-container-image {
+    background: url(https://palliaweb.nl/CMSPages/GetAzureFile.aspx?path=~%5Cpznl%5Cmedia%5Cafbeelding-site%5Chomepagina%5Cwebinar.png&hash=10ce0dc881e1ea38522034a0175899c31b8f003b2ab7b3ec467cb1ce4ae0bca6);
+    min-height: 247px;
+    background-size: cover;
+    border-radius: 0 40px 0 0;
 }
