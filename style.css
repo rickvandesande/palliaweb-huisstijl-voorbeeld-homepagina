@@ -130,7 +130,11 @@ header {
     color: inherit;
     text-decoration: none;
 }
+.main-content-section {
+    background: url(https://app.palliarts.nl/wp-content/themes/palliarts-theme/images/background.svg);
+    background-size: cover;
 
+}
 .detail-contact-container {
     background-color: #ffffff;
     display: flex;
@@ -159,6 +163,7 @@ header {
 .theme-intro-container--white {
     background-color: #ffffff;
 }
+
 .related-theme-title {
     margin-bottom: 10px;
     font-weight: 600;
@@ -459,6 +464,7 @@ padding-top: 50px;
 .widget-section--2-columns .container{
     width: 50%;
     flex-direction: column;
+    background-color: #ffffff;
 }
 .content-block-container-content {
     display: flex;
