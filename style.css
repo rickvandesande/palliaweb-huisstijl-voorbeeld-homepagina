@@ -184,10 +184,11 @@ header {
 .general-overview-container {
     padding: 5px 0px;
     display: flex;
+    text-decoration: none;
 }
 
 .general-overview-container:hover {
-    background-color: #ffffff;
+    background-color: var(--secondary-color-500);
 }
 
 .general-overview-content {
@@ -195,7 +196,9 @@ header {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-}
+    align-content: flex-start;
+} 
+
 .general-overview-content::before{
     content: '';
     height: 32px;
@@ -209,22 +212,63 @@ header {
     display: block;
 }
 .general-overview-title {
-    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 100%;
+    color: var(--primary-color-800);
 }
-.general-overview-show-all {
-    font-size: 12px;
+.general-overview-label {
     font-weight: 600;
     text-decoration: none !important;
-    color: var(--touch-color-300) !important;
-    align-self: flex-end;
-    justify-content: flex-end;
-    display: flex;
-    width: 40%;
-    padding-right: 9px;
+    line-height: 22px;
+    color: var(--touch-color-300);
+}
+.general-overview-label::after {
+    content: '|';
+    margin-left: 5px;
+    font-weight: 400;
+
+}
+.general-overview-show-all {
+    padding: 13px 50px 15px;
+    line-height: 16px;
+    margin: 30px auto 0;
+    align-self: center;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 22px;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: var(--touch-color-300);
+    border: 2px solid var(--touch-color-300);
+    text-decoration: none;
 }
 .general-overview-show-all:hover {
-    text-decoration: underline !important;
+    background-color: #ffffff;
+    color: var(--touch-color-300);
 }
+
+.general-overview-show-all::before {
+    position: absolute;
+    left: -700px;
+    top: calc(50% - 1px);
+    content: '';
+    display: block;
+    background-color: var(--touch-color-300);
+    width: 700px;
+    height: 2px;
+}
+.general-overview-show-all::after {
+    position: absolute;
+    right: -700px;
+    top: calc(50% - 1px);
+    content: '';
+    display: block;
+    background-color: var(--touch-color-300);
+    width: 700px;
+    height: 2px;
+}
+
 .expendable-item-container {
     display: flex;
     flex-direction: column;
@@ -410,27 +454,40 @@ padding-top: 50px;
 .content-block-container {
     width: 100%;
     display: flex;
+    flex-grow: 1;
 }
 .widget-section--2-columns .container{
     width: 50%;
     flex-direction: column;
 }
 .content-block-container-content {
-    padding: 20px 13px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px;
+    min-height: 308px;
+    text-align: center;
+    z-index: 2;
 }
 .content-block-container-image {
-    background: url(https://palliaweb.nl/CMSPages/GetAzureFile.aspx?path=~%5Cpznl%5Cmedia%5Cafbeelding-site%5Chomepagina%5Cwebinar.png&hash=10ce0dc881e1ea38522034a0175899c31b8f003b2ab7b3ec467cb1ce4ae0bca6);
     min-height: 247px;
+    height: auto;
     background-size: cover;
     border-radius: 0 40px 0 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
 .content-block-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: var(--primary-color-300);
-    padding: 20px 13px 40px;
+    height: 100%;
+    padding-top: 100px;
     text-align: center;
+
 }
 .content-block-title {
     font-size: 18px;
@@ -442,23 +499,34 @@ padding-top: 50px;
     font-size: 14px;
     line-height: 20px;
     margin-top: 0;
+    padding: 0px 13px 40px
 }
 .content-block-container-content-spacer {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    border-radius: 23px 23px 0 0;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
 }
 .content-block-read-more {
     display: flex;
     position: relative;
-    top: -20px;
+    top: -60px;
     padding: 13px 50px 15px;
     font-size: 14px;
     margin: 0 auto;
     border-radius: 30px;
     z-index: 3;
     background-color: var(--touch-color-300);
+    border: 2px solid var(--touch-color-300);
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     align-self: center;
+}
+.content-block-read-more:hover {
+    background-color: #ffffff;
+    color: var(--touch-color-300);
 }
