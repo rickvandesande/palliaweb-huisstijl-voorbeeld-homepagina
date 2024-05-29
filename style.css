@@ -600,8 +600,14 @@ padding-top: 50px;
     object-fit: cover;
 }
 .section-color--taupe {
-    margin-top: -150px;
+    margin: -150px auto 0px auto;
     background-color: var(--secondary-color-500);
+    width: 100%;
+}
+.container--taupe {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-top: 200px;
 }
 .placeholder {
     width: 100%;
@@ -668,4 +674,50 @@ footer .footer-grid .social a svg {
     height: 16px;
     width: 17px;
     overflow: hidden;
+}
+.widget-section--3-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.widget-image-text-separate {
+    position: relative;
+    min-height: 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    background-color: var(--primary-color-300);
+    background-size: cover;
+}
+.text-white {
+    padding-top: 50px !important;
+    color: #ffffff;
+    
+}
+.widget-top-left {
+    border-top-left-radius: 30px;
+}
+.widget-bottom-left {
+    border-bottom-left-radius: 30px;
+}
+.widget-top-right {
+    border-top-right-radius: 30px;
+}
+.widget-bottom-right {
+    border-bottom-right-radius: 30px;
+}
+.widget-description {
+    text-align: center;
+    padding: 5px 13px 40px;
+}
+.widget-image {
+    width: 100%;
+    min-height: 120px;
+    background-size: cover;
+    background-position: 0%;
+}
+.widget-image-text-separate .content-block-read-more {
+    position: absolute;
+    bottom: -365px;
 }
