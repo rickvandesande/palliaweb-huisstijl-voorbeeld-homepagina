@@ -484,7 +484,7 @@ header .container {
     flex-direction: column;
 }
 .widget-section--1-columns .content-block-container.background-image-size--small .content-block-container-content.text-position--bottom, .widget-section--2-columns .content-block-container.background-image-size--small .content-block-container-content {
-	padding: 0px 13px 40px;
+	padding: 0px 0px 40px;
 }
 
 .widget-section--3-columns .content-block-container-content, .widget-section--66-33 .content-block-container-content {
@@ -544,9 +544,10 @@ header .container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-radius: 23px 23px 0 0;
+    border-radius: 0px 23px 0 0;
     background-color: transparent;
     overflow: hidden;
+    margin-top: 50px;
 }
 .content-block-read-more {
     display: flex;
@@ -601,6 +602,9 @@ header .container {
     width: 50%;
     padding: 75px 45px 110px;
     box-sizing: border-box;
+}
+.highlight-card--media {
+    border-radius: 0px 47px 0px 0px;
 }
 .highlight-card__summary {
     font-size: 16px;
